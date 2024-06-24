@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fae2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1 {
+            color: #262633;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            width: 80%;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ddb4d0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+            transform: translateY(100%);
+        }
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<h1>MINT'S MOST FAVORITE</h1>
+<p>
+<div class="header">
+    <a href="gallery.submit.html">Gallery</a> |
+    <a href="biodata.submit.html">Biodata</a> |
+    <a href="table.submit.html">Education</a> |
+    <a href="email.submit.html">Contact</a>
+</div>
+</p>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="image/psj 7.jfif" alt="Park seo joon">
+        <div class="caption">ARTIST: Park seo joon</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="image/fav movie.jfif" alt="Maleficent movie">
+        <div class="caption">MOVIE: Maleficent movie</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="image/tomyam.jfif" alt="Tomyam">
+        <div class="caption">FOOD: Tomyam</div>
+    </div>
+
+    <div class="gallery-item">
+    <img src="image/fav colour.jfif" alt="Pink">
+    <div class="caption">COLOUR: pink</div>
+</div>
+
+    <div class="gallery-item">
+    <img src="image/mathca latte.jfif" alt="Matcha Latte">
+    <div class="caption">DRINK: Matcha Latte</div>
+</div>
+
+</body>
+</html>
